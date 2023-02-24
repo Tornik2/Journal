@@ -1,0 +1,235 @@
+html,
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro';
+    line-height: 1.5;
+    background: rgb(223, 209, 183);
+}
+
+/* ================
+HEADER TYPOGRAPHY 
+=================*/
+
+.header {
+    display: flex;
+    background-color: black;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box; 
+    padding: 0.5em 0.5em;  
+    margin-bottom: 20px;
+}
+.logo-name {
+    
+    display: flex;
+    padding-left: 2em;
+    align-items: center;
+}
+.logo {
+    width: 2em;
+    border-radius: 50%;       
+}
+
+.journal-name {
+    padding-left: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+nav {
+    
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    padding-right: 2em;
+}
+
+.nav-home {
+    padding-right: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+/*===================
+Featured Article 
+=====================*/
+
+.featured-article {
+    background: url("images/Basketball-Court.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1em;
+    color: #e7d8d8;
+    text-shadow: 0 0 5px #633f3f;
+}
+
+
+
+.date {
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+.featured-article h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.featured-article p {
+    font-size: 1rem;
+}
+
+/* ============
+RECENT
+===============*/
+.extra-h1 {
+    text-align: center;
+}
+.recent-section {
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+}
+
+.recent-article {
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.recent-article .date {
+    font-size: 1.125rem;
+    padding-top: 14px;
+    display: block;
+    margin: 0 0.2em;
+    
+}
+
+.recent-article h1 {
+    font-size: 1.5rem;
+    color: #141414;
+    margin: 14px 0.2em 6px;
+}
+
+.recent-article p {
+    font-size: 1rem;
+    color: #505050;
+    margin: 0 0.2em;
+}
+
+.recent-images {
+    width: 100%;
+    display: block;
+    margin: auto;
+    max-height: fit-content;
+}
+
+.footer {
+    height: 100px;
+    background-color: #141414;
+    padding-top: 1.5em;
+}
+
+.footer-text {
+    color: whitesmoke;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer h1 {
+    margin: 0;
+}
+.footer h2 {
+    margin: 0;
+}
+
+/*================
+    ABOUT
+===================*/
+.about-first-lines {
+    display: flex;
+    flex-direction: column;
+    
+}
+.about {
+    margin: 40px 20px;
+    display: grid;
+}
+
+
+
+.about img {
+    width: 200px;
+    border-radius: 80%;
+}
+
+@media (min-width: 760px) {
+        .header {
+            padding: 1.5em 1em;
+        }
+        .journal-name {
+            font-size: 1.5rem;
+        }
+           
+        .logo {
+            width: 3em;
+        }
+
+        nav {
+
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.5;
+            padding-right: 3em;
+        }
+        
+        .logo-name {
+            padding-left: 3em;
+        }
+        .recent-section {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 2em;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .featured-article {
+            height: 80vh;
+            padding: 0 3em 2em;
+        }
+        .recent-images {
+            height: 30vh;
+            
+        }
+        .about {
+            display: gird;
+            grid-template-columns: 2em 1fr 2em;
+            grid-template-areas: 
+            "header header header"
+            ". text .";
+        }
+        .about-first-lines {
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            grid-area: header;
+            margin-bottom: 40px;
+        }
+
+        .about-inner-grid {
+            grid-area: text;
+        }
+    }
