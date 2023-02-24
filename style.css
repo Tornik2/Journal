@@ -46,7 +46,7 @@ nav {
 }
 
 .nav-home {
-    padding-right: 2em;
+    padding-right: 1em;
 }
 
 a {
@@ -188,7 +188,7 @@ RECENT
         .logo {
             width: 3em;
         }
-
+         
         nav {
 
             font-weight: 600;
@@ -196,7 +196,9 @@ RECENT
             line-height: 1.5;
             padding-right: 3em;
         }
-        
+        .nav-home {
+            padding-right: 2em;
+        }
         .logo-name {
             padding-left: 3em;
         }
